@@ -1,21 +1,30 @@
 from datetime import time
 
 
-def test_dark_theme():
+def test_dark_theme_by_time():
     """
-    Протестируйте правильность переключения темной темы на сайте
+    Протестируйте правильность переключения темной темы на сайте в зависимости от времени
     """
     current_time = time(hour=23)
     # TODO переключите темную тему в зависимости от времени суток (с 22 до 6 часов утра - ночь)
+
     is_dark_theme = None
     assert is_dark_theme is True
 
+
+def test_dark_theme_by_time_and_user_choice():
+    """
+    Протестируйте правильность переключения темной темы на сайте
+    в зависимости от времени и выбора пользователя
+    """
     current_time = time(hour=16)
-    dark_theme_enabled = True
+    dark_theme_enabled_by_user = True
     # TODO переключите темную тему в зависимости от времени суток,
     #  но учтите что темная тема может быть включена вручную
+
     is_dark_theme = None
     assert is_dark_theme is True
+
 
 
 def test_find_suitable_user():
