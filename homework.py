@@ -26,7 +26,6 @@ def test_dark_theme_by_time_and_user_choice():
     assert is_dark_theme is True
 
 
-
 def test_find_suitable_user():
     """
     Найдите нужного пользователя по условиям в списке пользователей
